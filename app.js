@@ -5,10 +5,8 @@ function busquedalineal(arr, elemento) {
             return i;
         }
     }
-    return i; 
 }
-
 const arreglo = [10, 8, 7, 6, 4, 9];
 const elementobuscado = 6;
 const indice = busquedalineal(arreglo, elementobuscado);
-console.log(`El elemento buscado ${elementobuscado} se encuentra en el índice ${indice}`);
+console.log(`El elemento buscado ${elementobuscado} se encuentra en el índice ${indice} `);
