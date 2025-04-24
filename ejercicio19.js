@@ -1,4 +1,7 @@
-a, b = 0, 1
-while a <= 100:
-    print(a, end=" ")
-    a, b = b, a + b
+let a = 0, b = 1;
+
+while (a <= 100) {
+  console.log(a);
+  let temp = a;
+  a = b;
+  b = temp + b;
