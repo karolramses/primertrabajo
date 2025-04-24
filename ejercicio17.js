@@ -1,16 +1,20 @@
-usuario_correcto = "admin"
-clave_correcta = "1234"
-intentos = 0
+let intentos = 0;
+const usuarioCorrecto = "admin";
+const claveCorrecta = "1234";
 
-while intentos < 3:
-    usuario = input("Usuario: ")
-    clave = input("Contraseña: ")
-    if usuario == usuario_correcto and clave == clave_correcta:
-        print("¡Login exitoso!")
-        break
-    else:
-        print("Credenciales incorrectas.")
-        intentos += 1
+while (intentos < 3) {
+  const usuario = prompt("Usuario:");
+  const clave = prompt("Contraseña:");
 
-if intentos == 3:
-    print("Has superado el número de intentos.")
+  if (usuario === usuarioCorrecto && clave === claveCorrecta) {
+    console.log("¡Login exitoso!");
+    break;
+  } else {
+    console.log("Credenciales incorrectas.");
+    intentos++;
+  }
+}
+
+if (intentos === 3) {
+  console.log("Has superado el número de intentos.");
+}
